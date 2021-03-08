@@ -1,0 +1,181 @@
+<!-- https://www.youtube.com/watch?v=XsEnj-1hG2o -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Milestones for CS6&7</title>
+  </head>
+  <body>
+    <main>
+      <!-- Landing Area -->
+      <div id="landing">
+        <div id="landing-text">
+          <div id="landing-text-inner">
+            <h1>Web Development and User Experience</h1>
+            <h3>Milestones for coding session 6 - 7</h3>
+            <a href="#instructions" class="btn" id="see-more">See More</a>
+          </div>
+        </div>
+        <div id="landing-image"></div>
+      </div>
+      <!-- Instrctions -->
+      <div id="instructions">
+        <h4>Instructions</h4>
+      </div>
+      <div id="instruction-list">
+        <ol>
+          <li>
+            Create a new Codepen that has at least the following:
+            <ul>
+              <li>
+                A head with proper meta (viewport, title, description, etc)
+              </li>
+              <li>A header</li>
+              <li>A paragraph</li>
+              <li>
+                A form (with all fields we learnt in class and two we didn’t
+                learn using docs)
+              </li>
+              <li>An unordered list and ordered list (nested if you wish)</li>
+              <li>An image with a link wrapped around it</li>
+              <li>A table using elements: table, thead, tbody, tr, th, td</li>
+            </ul>
+          </li>
+          <li>Feel free to create as much as you want on top of that</li>
+        </ol>
+      </div>
+      <div id="instruction-p">
+        <p>
+          The more you practice, the easier it is going to be to proceed with
+          more advanced classes!
+        </p>
+        <p>
+          Don’t be afraid to explore new elements using docs and experiment with
+          different attributes.
+        </p>
+      </div>
+      <!-- Table -->
+      <div id="table-contacts">
+        <h4>If you need help, do NOT contact the following persons:</h4>
+        <table border="1" width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Phone number</th>
+          </tr>
+          <tr>
+            <td>Andrew Jacobs</td>
+            <td>07123456789</td>
+          </tr>
+          <tr>
+            <td>James Seaber</td>
+            <td>07987654321</td>
+          </tr>
+        </table>
+      </div>
+      <!-- Form -->
+      <form>
+        <div id="info-form">
+          <h4>Please fill out the form below:</h4>
+        </div>
+        <div id="info-email">
+          <label for="email"
+            >Email:
+            <input type="email" id="email" required />
+          </label>
+        </div>
+        <div id="info-pw">
+          <label for="password"
+            >Password:
+            <input
+              type="password"
+              id="password"
+              required
+              minlength="6"
+              maxlength="12"
+            />
+          </label>
+        </div>
+        <div id="info-age">
+          <label for="age">Age:</label><br />
+          <input type="radio" value="20-" name="age" id="20-" required />
+          <label for="20-">20 and under</label><br />
+          <input type="radio" value="21-30" name="age" id="21-30" required />
+          <label for="21-30">21 - 30 </label><br />
+          <input type="radio" value="31-40" name="age" id="31-40" required />
+          <label for="31-40">31 - 40</label><br />
+          <input type="radio" value="41-50" name="age" id="41-50" required />
+          <label for="41-50">41 - 50</label><br />
+          <input type="radio" value="51+" name="age" id="51+" required />
+          <label for="51+">51 and above</label>
+        </div>
+        <div id="info-wt">
+          <label for="weight"
+            >Weight (kg):
+            <input
+              type="range"
+              id="weight"
+              required
+              value="100"
+              min="30"
+              max="170"
+              step="1"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output>100</output>
+          </label>
+        </div>
+        <div id="info-bd">
+          <label for="bd"
+            >Birthday:
+            <input type="date" id="bd" required />
+          </label>
+        </div>
+        <div id="info-nchild">
+          <label for="nchild"
+            >Number of children you have:
+            <input type="number" id="nchild" required min="0" max="10" />
+          </label>
+        </div>
+        <div id="info-bio">
+          <label for="bio"
+            >Short bio:
+            <input type="textarea" id="bio" required />
+          </label>
+        </div>
+        <div id="info-check">
+          <label for="checkbox"
+            >Check if the information is correct:
+            <input type="checkbox" id="checkbox" required />
+          </label>
+        </div>
+        <div id="info-submit">
+          <input
+            type="submit"
+            value="Submit"
+            id="submit"
+            style="width: 100px; margin: 0 auto"
+          />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div id="footer-name">
+        <h4>Chen-Shuang Wei</h4>
+      </div>
+      <div id="footer-img">
+        <p>
+          <a href="http://www.bbk.ac.uk/" target="_blank">
+            <img
+              src="http://2015.igem.org/wiki/images/7/72/Birkbeck_Logo_3.png"
+              alt="birkbeck-logo"
+            />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
